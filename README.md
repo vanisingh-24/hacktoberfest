@@ -34,6 +34,7 @@ MEAN is emerging as one of the industry’s most popular web technology stacks d
     Node.js for the server platform
 
 A few years ago MEAN was just beginning to gain popularity. Now it’s in full swing usage by major tech companies such as Uber, Google, PayPal and Netflix.
+<a href="https://hacktoberfest.digitalocean.com/" target="_blank">HERE YOU CAN REGISTER AND CLAIM YOUR SWAG</a>
 
 # This all languages code can be accepted here and begginner tutorial code also accepted by using PR's Thank you 
 ## Authors
