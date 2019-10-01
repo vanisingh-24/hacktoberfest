@@ -5,6 +5,7 @@ Hacktoberfest 2019 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305
 
 ```Only web development related things accepeted here means code and projects can be merged here ```
 ```any who is beginner to the github community and wants to contribute and get the swags, they are free to contribute ```
+
 # Fullstack development languages you can prefer for contributing to this repository 
 
 Web Fundamentals: HTML, CSS, JavaScript
