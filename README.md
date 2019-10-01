@@ -5,36 +5,70 @@ Hacktoberfest 2019 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305
 
 ```Only web development related things accepeted here means code and projects can be merged here ```
 ```any who is beginner to the github community and wants to contribute and get the swags, they are free to contribute ```
+```And github related contents or git-commands can be also accepted here```
 
-# Fullstack development languages you can prefer for contributing to this repository 
 
-Web Fundamentals: HTML, CSS, JavaScript
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019)&nbsp;
+[![Join the chat at https://gitter.im/Open-Source-Contributors-JSS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Open-Source-Contributors-JSS)&nbsp;
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://hacktoberfest.netlify.com/)&nbsp;
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/blob/master/README.md)&nbsp;
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/graphs/contributors)&nbsp;
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/issues)&nbsp;
 
-HTML and CSS (along with JavaScript) are the universal languages of front-end browsers, so it goes without saying that you should nail web development basics like HTML and CSS before diving into more difficult back-end technologies. A basic understanding of JavaScript should prove very useful as well.
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/issues?q=is%3Aissue+is%3Aclosed)&nbsp;
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/pull/)&nbsp;
+[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/Naereen/StrapDown.js.svg)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/pull/)&nbsp;
+[![HitCount](http://hits.dwyl.io/Naereen/badges.svg)](https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019)&nbsp;
 
-Luckily, there are plenty of free web development resources and intro to code courses out there to help you get your feet wet in web development and general programming techniques.
 
-As they begin writing code in JavaScript, novice programmers should also spend time getting familiar with algorithms and data structures at a basic level, since becoming familiar with these helps you break problems down into pieces that are more easily solved, across all technologies and languages. This is a real passion of mine, so be on the lookout for another blog post soon, dedicated tothis topic.
-Python
+# Hacktoberfest2019
+Happy Hacktober! :octocat: This is a beginner friendly repository made specifically for Hacktoberfest that helps you get your first PR and takes you a step closer to earning your Hacktoberfest T-shirt 👕.
 
-Python is an excellent introductory programming language for full-stack developers.
+🎯 If you are a beginner, and looking for your first contribution, we are here to help. Just append your favorite git command and its short description in our 
+###### <a href="https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/blob/master/beginner/json-files/git-commands.json" target="blank">https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/blob/master/beginner/json-files/git-commands.json</a> 
+and that counts as your first PR.
+#### CAUTION: The description must be under 60 words at max. 
 
-Although it is most popular as a back-end language, it is generally useful in other scenarios. As a general purpose programming language, you can use it to create almost any type of program or software.
+Also, add your github username in the <a href="https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/blob/master/beginner/contributers_list.md" target="blank">contributors_list.md</a>
 
-Python code is inherently readable, because of an easy-to-learn syntax and an emphasis on good programming style and naming. As an instructor, I appreciate that it even enforces good indentation, which requires programmers to stay very clear on how they organize their loops, conditions and other program logic.
+🎯 In case you are an intermediate or advanced level programmer or developer, we have got you covered too!! Step to our <a href="https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/tree/master/Intermediate" target="blank"> intermediate folder</a> and make contributions as per as your interests.
 
-While it’s design is simple, Python is nonetheless incredibly flexible and powerful, which is why a whopping 80 percent of top computer science programs teach Python as an introductory language.
-MEAN
+#### 💻 Also, our website is open to contributions from both frontend and designer fellows who want to help us in making it bigger and better. 
+### Check our Website: <a href="https://hacktoberfest.netlify.com/" target="blank"> https://hacktoberfest.netlify.com/ </a>
 
-MEAN is emerging as one of the industry’s most popular web technology stacks due to its powerful combination of JavaScript-based technologies:
+# Hacktoberfest2019
+#### Read Here or Refer to <a href="https://www.digitalocean.com/community/tutorials/how-to-use-git-a-reference-guide" target="blank">  https://www.digitalocean.com/community/tutorials/how-to-use-git-a-reference-guide </a> for more.
 
-    MongoDB for the database
-    Express.js for the web framework
-    AngularJS for the frontend framework
-    Node.js for the server platform
+# Instructions :
+### 1. Register yourself for Hacktoberfest 2019
+###### Link to register: https://hacktoberfest.digitalocean.com/
 
-A few years ago MEAN was just beginning to gain popularity. Now it’s in full swing usage by major tech companies such as Uber, Google, PayPal and Netflix.<br>
+![register](https://user-images.githubusercontent.com/42115530/65821155-7f724600-e24f-11e9-90ed-8a956b0a854a.JPG)
+
+### 2. Getting Started
+#### See Our Website at: https://hacktoberfest.netlify.com/
+
+![website](https://user-images.githubusercontent.com/42115530/65821073-6f0d9b80-e24e-11e9-883e-262588bdef7f.JPG)
+
+#### Move to Instructions by clicking on the <pre>START CONTRIBUTING</pre> button 
+
+![start](https://user-images.githubusercontent.com/42115530/65821081-7fbe1180-e24e-11e9-8e98-756ce51d6431.JPG)
+
+#### Read the Instructions and click Done at the end to move to the repository or <a href="https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019">click here</a> to head to the repository.
+
+![instructions](https://user-images.githubusercontent.com/42115530/65821120-0a067580-e24f-11e9-8f06-bd231a6ab96d.JPG)
+
+![instructions 2](https://user-images.githubusercontent.com/42115530/65821196-ec85db80-e24f-11e9-8178-7ebbed1abd73.JPG)
+
 <a href="https://hacktoberfest.digitalocean.com/" target="_blank">HERE YOU CAN REGISTER AND CLAIM YOUR SWAG TO DIGITALOCEAN HACKTOBERFEST</a>
+## Hurray!!! You just got closer to completing your hacktoberfest challenge. 😃
+
+## Happy?? Star ⭐ this Repo. 🤩
+
+## Check your Hacktoberfest Contribution status at:
+<a href="https://hacktoberfest.digitalocean.com/profile" target="blank">https://hacktoberfest.digitalocean.com/profile</a>
+
 # And if you are sending PR to this repository then donot forget to add your name in authors list
 
 # This all languages code can be accepted here and begginner tutorial code also accepted by using PR's Thank you 
