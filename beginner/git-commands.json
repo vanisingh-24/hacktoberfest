@@ -48,8 +48,12 @@
     "description": "This command sets the author name and email address respectively to be used with your commits."
   },
   { 
+    "title": "git config --global alias",
+    "description": "This command creating the aliases will not modify the source commands."
+  },
     "title": "git staatus",
     "description": "This command to view the state of the working directory and the staging area."
+
   }
 ]
 
