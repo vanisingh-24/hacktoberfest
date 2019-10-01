@@ -46,6 +46,10 @@
   { 
     "title": "git config",
     "description": "This command sets the author name and email address respectively to be used with your commits."
+  },
+  { 
+    "title": "git staatus",
+    "description": "This command to view the state of the working directory and the staging area."
   }
 ]
 
