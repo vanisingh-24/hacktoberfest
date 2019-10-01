@@ -46,6 +46,10 @@
   { 
     "title": "git config",
     "description": "This command sets the author name and email address respectively to be used with your commits."
+  },
+  { 
+    "title": "git config --global alias",
+    "description": "This command creating the aliases will not modify the source commands."
   }
 ]
 
