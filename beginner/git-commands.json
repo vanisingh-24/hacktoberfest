@@ -1,0 +1,51 @@
+[
+  {
+    "title": "git init",
+    "description": "The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository."
+  },
+  {
+    "title": "git add .",
+    "description": "The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit."
+  },
+  {
+    "title": "git commit -m '--your message--'",
+    "description": "The git commit command captures a snapshot of the project's currently staged changes."
+  },
+  {
+    "title": "git log",
+    "description": "The git commit command provides a log of changes made throughout time."
+  },
+  {
+    "title": "git branch",
+    "description": "The git commit command is used to make a new branch of your repository."
+  },
+  {
+    "title": "git branch Your_Branch_Name",
+    "description": "The git branch command creates a new branch. "
+  },
+  {
+    "title": "git checkout --branch_name--",
+    "description": "The git checkout command switch the working branch by pointing the HEAD to the branch to choose for."
+  },
+  {
+    "title": "git clone",
+    "description": "The git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location. The original repository can be located on the local filesystem or on remote machine accessible supported protocols."
+  },
+  {
+    "title": "git remote",
+    "description": "A remote in Git is a common repository that all team members use to exchange their changes. In most cases, such a remote repository is stored on a code hosting service like GitHub or on an internal server."
+  },
+  {
+    "title": "git stash",
+    "description": "The git stash command ammends a dirty working directory"
+  },
+ {
+    "title": "git merge",
+    "description": "The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch."
+  },
+  { 
+    "title": "git config",
+    "description": "This command sets the author name and email address respectively to be used with your commits."
+  }
+]
+
