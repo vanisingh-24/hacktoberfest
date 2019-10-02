@@ -60,6 +60,11 @@
     "title": "git push",
     "description": "This command to push the changes to the current branch of your forked repository."
 
+  },
+    {
+    "title": "git blame",
+    "description": "This command shows how what revision and author last modified each line of a file."
+
   }
 ]
 
