@@ -68,3 +68,4 @@ Also, add your github username in the <a href="https://github.com/Open-Source-Co
 * **Pragati Verma**  - [PragatiVerma18](https://github.com/PragatiVerma18)
 * **Rajat Verma**  - [rajat2502](https://github.com/rajat2502)
 * **Fariz Rifqi**  - [farizrifqi](https://github.com/farizrifqi)
+* **Ayan Raj**  - [ayanujju](https://github.com/ayanujju)
