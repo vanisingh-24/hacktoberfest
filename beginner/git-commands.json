@@ -65,6 +65,26 @@
     "title": "git blame",
     "description": "This command shows how what revision and author last modified each line of a file."
 
+  },
+  {
+    "title": "git tag",
+    "description": "The git commit command provides Tags are ref's that point to specific points in Git history. Tagging is generally used to capture a point in history that is used for a marked version release ."
+    
+  },
+  {
+    "title": "git send-email",
+    "description": "This command sends a collection of patches as emails."
+    
+  },
+  {
+    "title": "git reset hard",
+    "description": "Go back to the last commit."
+    
+  },
+  {
+    "title": "git archive",
+    "description": "Create an archive of files from a named tree."
+    
   }
 ]
 
