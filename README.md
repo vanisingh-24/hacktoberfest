@@ -3,7 +3,7 @@ Hacktoberfest 2019 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305
 
 # Instructions for contributing to this repository 
 
-```Only web development related things accepeted here means code and projects can be merged here ```
+```Only web development related things accepted here means code and projects can be merged here ```
 ```any who is beginner to the github community and wants to contribute and get the swags, they are free to contribute ```
 ```And github related contents or git-commands can be also accepted here```
 
@@ -17,7 +17,7 @@ Happy Hacktober! :octocat: This is a beginner friendly repository made specifica
 🎯 If you are a beginner, and looking for your first contribution, we are here to help. Just append your favorite git command and its short description in our 
 ###### <a href="https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/blob/master/beginner/json-files/git-commands.json" target="blank">https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/blob/master/beginner/json-files/git-commands.json</a> 
 and that counts as your first PR.
-#### CAUTION: The description must be under 60 words at max. 
+#### CAUTION: The descriptions must be under 60 words at max. 
 
 Also, add your github username in the <a href="https://github.com/Open-Source-Contributors-JSS/Hacktoberfest2019/blob/master/beginner/contributers_list.md" target="blank">contributors_list.md</a>
 
@@ -51,7 +51,7 @@ Also, add your github username in the <a href="https://github.com/Open-Source-Co
 ![instructions 2](https://user-images.githubusercontent.com/42115530/65821196-ec85db80-e24f-11e9-8178-7ebbed1abd73.JPG)
 
 <a href="https://hacktoberfest.digitalocean.com/" target="_blank">HERE YOU CAN REGISTER AND CLAIM YOUR SWAG TO DIGITALOCEAN HACKTOBERFEST</a>
-## Hurray!!! You just got closer to completing your hacktoberfest challenge. 😃
+## Hurray!!! You just got closer to completing your hacktoberfest challenges. 😃
 
 ## Happy?? Star ⭐ this Repo. 🤩
 
@@ -60,7 +60,7 @@ Also, add your github username in the <a href="https://github.com/Open-Source-Co
 
 # And if you are sending PR to this repository then donot forget to add your name in authors list
 
-# web development related languages code can be accepted here and begginner tutorial code also accepted by using PR's Thank you  god bless you .
+# web development related languages code can be accepted here and beginner tutorial code also accepted by using PR's Thank you  god bless you .
 ## Authors
 
 * **Krishna kakade**  - [krishnakakade1999](https://github.com/krishnakakade1999)
