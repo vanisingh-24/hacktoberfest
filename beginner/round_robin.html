@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Round Robin</title>
+<style>
+*  {
+
+ margin:0px;
+ padding:0px;
+}
+}
+h1{
+	
+ font: bold 20px tahoma;
+}
+h2{
+ font: bold 14px tahoma;
+}
+p {
+ font: bold 14px times new roman;
+}
+header, section, footer, aside, nav, article, hgroup {
+ display:block;
+}
+body{
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	
+}
+#big_wrapper{
+	max-width:100%;
+	margin:20px;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex:1;
+}
+#top_header{
+	background: #000033;
+	/*font: bold 20px tahoma;*/
+	border:2px solid black;
+	padding:20px;
+	color:white;
+	height:65px;
+	
+}
+#top_menu{
+	 background: #0099ff;
+	 border:red;
+	 color:white;
+ }
+ #top_menu li{
+	 display:inline-block;
+	 list-style:none;
+	 padding: 0.5em 0.5em;
+	 font:20px Arvo;
+ }
+ #new_div{
+	 display:-webkit-box;
+	 -webkit-box-orient: horizontal;
+ }
+ #side{
+	 -webkit-box-flex:0;
+	 width:220px;
+	 margin:20px 0px;
+	 padding:30px;
+ }
+#main_section{
+	 border:1px solid blue;
+	 -webkit-box-flex:1;
+	 margin:20px;
+	 padding:20px;
+	 display:-webkit-box;
+	 -webkit-box-orient: horizontal;
+ }
+ #simu{
+ 	border:1px solid blue;
+	padding: 10px;
+ }
+#pq{
+	display:-webkit-box;
+	 -webkit-box-orient: horizontal;
+	padding: 10px;
+}
+
+table{
+    border: 1px solid black;
+}
+#cupunit{
+	display:-webkit-box;
+	 -webkit-box-orient: vertical;
+	padding: 10px;
+}
+#cpu1{
+	display:-webkit-box;
+	 -webkit-box-orient: horizontal;
+	padding: 10px;
+}
+#cpu{
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	left: 75%;
+	top: 30%;
+   
+}
+#new_footer{
+	margin-top: 30px;
+	 text-align:center;
+	 padding:20px;
+	 border-top:2px solid green;
+ }
+</style>
+  <script type="text/javascript">
+  var n=[];
+  var t=[];
+  var ct=[];
+  var ft=0;
+  var wt=[];
+  var tc=11;
+  var i=0;
+  var y=0;
+  var flag=0;
+  var tt=[];
+function start(){
+	var cp=document.getElementById("cpu");
+	//document.getElementById("demo").innerHTML = wt;
+	//document.getElementById("demo1").innerHTML = ct;
+
+	if (n.length!=0){
+		//ct=t;
+		flag=1;
+		cp.style.backgroundColor="red";
+		y=0;
+		execute();
+	}else{
+		flag=0;
+		cp.style.backgroundColor="green";
+		alert("ther is no process in queue");
+		document.getElementById("rs").innerHTML="Average waiting time for  all process(ms): "+((wt.length>0)? result(wt):0 )+" ms";
+	}
+} function newAdd(){
+	if(flag==1){
+		add();
+		start();
+	}else{
+		add();
+	}
+}
+function add() {
+	var table = document.getElementById("mt1");
+    var pnm = document.getElementById("nm").value.trim();
+    var ptm = document.getElementById("bt").value.trim();
+    if (pnm=="" || ptm<=0){
+    	alert("pls field all fields properly");
+    }else{
+    	n.push(pnm);
+    	t.push(ptm);
+    	ct.push(new Date().getTime());
+    	//document.getElementById("demo").innerHTML = n;
+	    var row = table.insertRow(-1);
+	    var cell1 = row.insertCell(0);
+	    var cell2 = row.insertCell(1);
+	    cell1.innerHTML = pnm;
+	    cell2.innerHTML = ptm;
+    }
+	
+}
+function execute(){
+	var cp=document.getElementById("cpu");
+	cp.style.backgroundColor="red";
+	id=setInterval(ex,1);
+}
+function ex(){
+	y=y+1;
+	if(t[0]<=0){
+		///job done
+  		clearInterval(id);
+  		ft=new Date().getTime();
+  		funish();
+	}else if(y==tc){
+    	clearInterval(id);
+		//next process;
+		putBack();
+	}else{
+		document.getElementById("psnm").innerHTML = n[0];
+		document.getElementById("pstm").innerHTML = t[0];
+		t[0]=t[0]-1;
+	}
+}
+
+function putBack(){
+	var flag=0;
+	var cp=document.getElementById("cpu");
+	cp.style.backgroundColor="green";
+	var table1 = document.getElementById("mt1");
+	var a=n.shift();
+	var b=t.shift();
+	n.push(a);
+	t.push(b);
+	tt.push(ct[0]);
+	ct.push(ct.shift());
+
+	table1.deleteRow(1);
+	var row = table1.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = a;
+    cell2.innerHTML = b;
+    start();
+}
+function funish(){
+	var flag=0;
+	document.getElementById("mt1").deleteRow(1);
+	var cp=document.getElementById("cpu");
+	cp.style.backgroundColor="green";
+	var table = document.getElementById("mt2");
+	var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = n[0];
+    cell2.innerHTML = ft-ct[0];
+    wt.push(ft-ct[0]);
+    n.shift();t.shift();ct.shift();ft=0;
+    document.getElementById("psnm").innerHTML ="Name";
+	document.getElementById("pstm").innerHTML = "Time(ms)";
+    start();
+}
+function resetQtm(){
+	var tq = document.getElementById("tcountom").value.trim();
+	if(tq<=0){
+		alert("time quantop should be positive real number");
+	}else{
+	tc=tq;
+}
+
+
+}function result(num){
+	var total = 0;
+    for(var i = 0;i < num.length; i++) { 
+        total+=num[i];
+    }
+    return total/num.length;
+}
+  </script>
+</head>
+<body>
+<div id="big_wrapper">
+<header id="top_header">
+	<h1 align="center">Round Robin Scheduling</h1>
+</header>
+<!--
+<nav id="top_menu">
+		<ol>
+		<li>Home</li>
+		<li>About</li>
+		</ol>
+	</nav>
+-->
+<div id="new_div">
+<section id="main_section">
+		<article style="width: 60%">
+			<header style="padding: 10px ;font-size:25px;">
+				<hgroup>
+				<h1>Theory</h1>
+				</hgroup>
+			</header>
+			<p>To schedule processes fairly, a round-robin scheduler generally employs time-sharing, giving each job a time slot or quantum[4] (its allowance of CPU time), and interrupting the job if it is not completed by then. The job is resumed next time a time slot is assigned to that process. If the process terminates or changes its state to waiting during its attributed time quantum, the scheduler selects the first process in the ready queue to execute. In the absence of time-sharing, or if the quanta were large relative to the sizes of the jobs, a process that produced large jobs would be favoured over other processes.
+
+Round-robin algorithm is a pre-emptive algorithm as the scheduler forces the process out of the CPU once the time quota expires.
+
+For example, if the time slot is 100 milliseconds, and job1 takes a total time of 250 ms to complete, the round-robin scheduler will suspend the job after 100 ms and give other jobs their time on the CPU. Once the other jobs have had their equal share (100 ms each), job1 will get another allocation of CPU time and the cycle will repeat. This process continues until the job finishes and needs no more time on the CPU.</p>
+			<ul style="margin-left: 20px">
+				<li>Jobs are executed on first come, first serve basis.</li>
+				<li>It is a non-preemptive, pre-emptive scheduling algorithm.</li>
+				<li>Easy to understand and implement.</li>
+				<li>Its implementation is based on FIFO queue.</li>
+				<li>Poor in performance as average wait time is high.</li>
+			</ul>
+
+		</article>
+		<aside id="side">
+			<img src="https://doc.micrium.com/download/attachments/12848256/Scheduling.08.4.1.jpg?version=1&modificationDate=1385498062000&api=v2" style="width: 400px ;height:250px">
+	</aside>
+	</section>
+</div>
+
+<header style="width: 100%;height: auto;background:#0099ff">
+	<h1>Lab</h1>
+</header>
+<div id="simu">
+<div id="pq">
+<div style="width: 50%;padding-left: 20px">
+
+  <table class="table table-stripe">
+    <caption>New Process</caption>
+    <tr>
+      <th>Process name</th>
+      <th>Brust Time</th>
+    </tr>
+    <tr>
+      <td><input class="form-control"  type="text" id="nm"></td>
+      <td><input class="form-control"  type="number" id="bt" value="0" step="1">ms</td>
+    </tr>
+    <tr colspan="2">
+				<td align="center" colspan="2" ><button class="btn btn-primary" onclick="newAdd()" style="width:70%;margin: 5px">Add To Queue</button></td>
+		</tr>
+  </table>
+  <button onclick="start()" style="margin-top:20px;margin-left:25%;;padding: 10px">Start Execution</button>
+  </div>
+  <div>
+
+			<div style="overflow-y:auto; width: 100% ;height: 250px; margin-left: 50px">
+				<table id="mt1" cellspacing="20px">
+					<caption>Process Queue</caption>
+					<tr>
+						<th>Process Name</th>
+						<th>Remain Time</th>
+					</tr>
+				</table>
+				</div>
+</div>
+</div>
+<br>
+
+<div id="cupunit">
+<div id="cpu1">
+<div id="cpu" >
+	<h1 align="center">Cpu</h1>
+	<p id="psnm">Name </p>
+	<br><p id="pstm">Time(ms)</p>
+</div>
+<div style="overflow-y:auto; width: 100% ;height: 250px; margin-left: 40%">
+	
+<table id="mt2" cellspacing="20px" >
+  <caption>Finished Queue</caption>
+  <tr>
+    <th>Process Name</th>
+    <th>Total time taken(ms)</th>
+  </tr>
+</table>
+</div>
+</div>
+
+<div>
+<div>
+Time Quantum<br>
+<input type="number" id="tcountom" value="10"> 
+<button onclick="resetQtm()">Set</button>
+</div>
+<div>
+<h3 style="padding-top:30px;">Result</h1>
+<p id="rs"></p>
+</div>
+</div>
+<footer id="new_footer">
+	<p>@Test Lab</p>
+</footer>
+</div>
+</body>
+</html>
