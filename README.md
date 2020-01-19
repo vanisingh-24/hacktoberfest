@@ -63,7 +63,7 @@ Also, add your github username in the <a href="https://github.com/Open-Source-Co
 # web development related languages code can be accepted here and beginner tutorial code also accepted by using PR's Thank you  god bless you .
 ## Authors
 
-* **Krishna kakade**  - [krishnakakade1999](https://github.com/krishnakakade1999)
+* **Krishna kakade**  - [krishnadevz](https://github.com/krishnadevz)
 
 * **Pragati Verma**  - [PragatiVerma18](https://github.com/PragatiVerma18)
 * **Rajat Verma**  - [rajat2502](https://github.com/rajat2502)
