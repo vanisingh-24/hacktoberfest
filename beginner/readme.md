@@ -1,1 +1,1 @@
-Tutorial How to using Git 
+Tutorial On How to use Git 
