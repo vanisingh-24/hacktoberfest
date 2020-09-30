@@ -58,9 +58,9 @@ Also, add your github username in the <a href="https://github.com/Open-Source-Co
 ## Check your Hacktoberfest Contribution status at:
 <a href="https://hacktoberfest.digitalocean.com/profile" target="blank">https://hacktoberfest.digitalocean.com/profile</a>
 
-# And if you are sending PR to this repository then donot forget to add your name in authors list
+# And if you are sending PR to this repository then do not forget to add your name in authors list
 
-# web development related languages code can be accepted here and beginner tutorial code also accepted by using PR's Thank you  god bless you .
+# web development related languages code can be accepted here and beginner tutorial code also accepted by using PR's. Thank you  god bless you .
 ## Authors
 
 * **Krishna kakade**  - [krishnadevz](https://github.com/krishnadevz)
@@ -71,4 +71,5 @@ Also, add your github username in the <a href="https://github.com/Open-Source-Co
 * **Ayan Raj**  - [ayanujju](https://github.com/ayanujju)
 * **Shubham singla** - [shubhamsingla807](https://github.com/shubhamsingla807)
 * **Amitkumar**  - [UltimateBrains](https://github.com/UltimateBrains)
+* **Vani Singh** - [vanisingh-24](https://github.com/vanisingh-24)
 
